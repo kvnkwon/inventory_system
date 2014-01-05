@@ -1,0 +1,10 @@
+<% if @inventory.errors.any? %>
+  <%= flash[:error] %>
+<% end %>
+
+<%= simple_form_for @inventory do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description, as: :text %>
+  <%= f.input :quantity %>
+  <%= f.button :submit %>
+<% end %>
