@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :inventory do
-    title "MyString"
-    description "MyText"
-    quantity 1
+    title "Steak"
+    description "juicy"
+    quantity "2"
   end
 end
